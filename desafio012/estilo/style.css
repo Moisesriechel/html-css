@@ -26,6 +26,7 @@ header{
 }
 h3.novo{
     background-color:hsla(84, 100%, 50%, 0.233);
+    font-size:.8em ;
 
     color: darkblue;
     text-align: right;
@@ -38,7 +39,7 @@ header > h1 {
    font-variant: small-caps;
    font-family: var(--fonte5);
    font-size: 5vw;
-   box-shadow: 5px solid white;
+   text-shadow: 2px 1px 0px green;
   
   
     /* text-transform:uppercase*/
@@ -54,7 +55,7 @@ a{
 }
 a:hover{
     text-decoration: underline;
-    color: red;
+    color: green;
     font-size: 20px;
 }
 section{
@@ -65,10 +66,15 @@ section{
     font-family: var(--fonte4);
     font-size: 2.5vw;
 }
+section > p {
+    padding-bottom: 3em;
+}
 section.imagem >p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.424);
+    background-color: rgba(0, 0, 0, 0.589);
+    text-shadow:1px 1px 0px black ;
+    
 
 }
 section.normal{
@@ -76,8 +82,20 @@ section.normal{
     color: blue;
 }
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.616);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.634);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+   ;
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+  
 }
 footer{
     background-color: black;
